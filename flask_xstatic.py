@@ -6,7 +6,7 @@ from flask import send_from_directory
 from xstatic.main import XStatic
 
 
-class FlaskXStatic():
+class FlaskXStatic(object):
     """
     Flask support for XStatic assets.
 
