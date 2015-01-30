@@ -21,11 +21,6 @@ setuptools.setup(name='Flask-XStatic',
                  zip_safe=False,
                  description='Flask support for XStatic assets',
                  long_description=readme + '\n\n' + history,
-                 tests_require=[
-                     'flask-testing',
-                     'nose',
-                     'xstatic-jquery',
-                     ],
                  test_suite='nose.collector',
                  classifiers=[
                      'Development Status :: 3 - Alpha',
