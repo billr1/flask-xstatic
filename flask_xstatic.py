@@ -7,8 +7,13 @@ from xstatic.main import XStatic
 
 
 class FlaskXStatic():
-    def __init__(self, app):
+    def __init__(self, app=None):
+        self.app = app
         self.serve_files = {}
+        if app is not None:
+            self.init_app(app)
+
+    def init_app(self, app):
 
         @app.route('/xstatic/<xs_package>/<path:filename>')
         def xstatic(xs_package, filename):

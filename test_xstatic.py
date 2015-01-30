@@ -1,6 +1,21 @@
+import unittest
+
 from flask import Flask
 from flask.ext.testing import TestCase
 from flask.ext.xstatic import FlaskXStatic
+
+
+class InitTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.app = Flask('InitTestCase')
+
+    def test_ctor_app(self):
+        xs = FlaskXStatic(self.app)
+
+    def test_init_app(self):
+        xs = FlaskXStatic()
+        xs.init_app(self.app)
 
 
 class XStaticTestCase(TestCase):
