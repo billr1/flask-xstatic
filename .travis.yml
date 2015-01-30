@@ -6,6 +6,6 @@ python:
   - 2.6
   - 2.7
   - 3.4
-script: nosetests --with-coverage
+script: nosetests --with-coverage --cover-package=flask_xstatic
 after_success:
   coveralls
