@@ -14,10 +14,17 @@ setuptools.setup(name='Flask-XStatic',
                  url="https://github.com/emillon/flask-xstatic",
                  license='BSD',
                  py_modules=['flask_xstatic'],
-                 install_requires=[],
+                 install_requires=[
+                     'Flask',
+                     'XStatic',
+                     ],
                  zip_safe=False,
                  description='Flask support for XStatic assets',
                  long_description=readme + '\n\n' + history,
+                 tests_require=[
+                     'nose',
+                     ],
+                 test_suite='nose.collector',
                  classifiers=[
                      'Development Status :: 3 - Alpha',
                      'Intended Audience :: Developers',
