@@ -1,4 +1,3 @@
-from pip.req import parse_requirements
 import setuptools
 
 with open('README.rst') as f:
@@ -8,7 +7,7 @@ with open('HISTORY.rst') as f:
     history = f.read()
 
 setuptools.setup(name='Flask-XStatic',
-                 version='0.0.1+dev',
+                 version='0.0.2+dev',
                  author='Etienne Millon',
                  author_email='me@emillon.org',
                  url="https://github.com/emillon/flask-xstatic",
